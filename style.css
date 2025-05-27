@@ -11,7 +11,7 @@
 }
 
  .scroll-container {
-    max-height: 380px;
+    height: 380px;
     overflow-y: scroll;
     padding-right: 10px;
   }
@@ -66,4 +66,7 @@ list-style-type:none;
   text-decoration: none;
   border-bottom: 1px solid black;
   transition: all 0.2s ease;
+}
+.ptextstyle{
+  font-size: 15px;
 }
