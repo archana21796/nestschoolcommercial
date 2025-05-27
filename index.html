@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nest School</title>
+
+  <!-- ✅ Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- ✅ Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+
+  <!-----------Font Awesome Icon --------->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <!-- Header Section -->
+        <header class="py-3 border-bottom bg-white">
+        <div class="container-fluid d-flex flex-wrap align-items-center justify-content-between">
+            
+            <!-- Logo -->
+            <div class="d-flex align-items-center">
+            <img src="./nestschoollogo.png" alt="The Nest School Logo" class="me-3" style="height: 50px;">
+            </div>
+
+            <!-- Programmes Offered & Affiliations -->
+            <div class="d-none d-md-flex align-items-center flex-grow-1 justify-content-center text-center">
+            <div class="me-3">
+                <strong>Programmes Offered</strong><br>
+                <span class="text-warning fw-bold fs-4">Pre-KG to Grade 12</span>
+            </div>
+            <div class="mx-3 border-start border-end px-3">
+                <img src="./ibworldimg.png" alt="IB Logo" style="height: 40px;">
+            </div>
+            <div class="ms-3 text-start">
+                <img src="./cambridgelogo.png" alt="Cambridge Logo" style="height: 40px;">
+                <br>
+                <small>Cambridge International School</small>
+            </div>
+            </div>
+
+            <!-- Social + Menu -->
+            <div class="d-flex align-items-center">
+            <!-- Social Icons -->
+            <div class="d-none d-md-flex me-3">
+                <a href="https://www.facebook.com/TheNESTSchoolChennai/" target="_blank" class="text-danger me-2 border p-1 border-danger rounded-2"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/the_nest_school/" target="_blank" class="text-danger me-2 border p-1 border-danger rounded-2"><i class="bi bi-instagram"></i></a>
+                <a href="https://twitter.com/The_NEST_School" target="_blank" class="text-danger me-2 border p-1 border-danger rounded-2"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://www.youtube.com/@TheNESTSchoolChennai" target="_blank" class="text-danger border p-1 border-danger rounded-2"><i class="bi bi-youtube"></i></a>
+            </div>
+
+            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+            <i class="bi bi-list" style="font-size: 2rem;"></i>
+            </button>
+            <div class="offcanvas offcanvas-start text-dark" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel" style="background-color: #FF6D00;">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title fw-bold" id="offcanvasMenuLabel">Menu</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="nav flex-column fw-bold">
+                    <li class="nav-item dropdown">
+                  <a class="nav-link" data-bs-toggle="collapse" href="#programmesCollapse" role="button" aria-expanded="true" aria-controls="programmesCollapse">
+                    Programmes <i class="bi bi-chevron-down dropdown-arrow"></i>
+                  </a>
+                  <div class="collapse" id="programmesCollapse">
+                    <div class="submenu">
+                      <a href="https://thenest.school/programmes-nursery/" target="_blank">Nursery</a>
+                      <a href="https://thenest.school/programmes-primary/" target="_blank">Primary</a>
+                      <a href="https://thenest.school/programmes-lower-secondary/" target="_blank">Lower Secondary</a>
+                      <a href="https://thenest.school/programmes-grade9-10/" target="_blank">Grade 9-10</a>
+                      <a href="https://thenest.school/programmes-grade-11-12/" target="_blank">Grade 11-12</a>
+                      <a href="https://thenest.school/usdp/" target="_blank">USDP</a>
+                    </div>
+                  </div>
+                      <!-- <ul class="dropdown-menu" aria-labelledby="programmesDropdown">
+                        <li><a class="dropdown-item" href="#">IB PYP</a></li>
+                        <li><a class="dropdown-item" href="#">Cambridge</a></li>
+                      </ul> -->
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="https://thenest.school/admission/" target="_blank">Admission</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="https://thenest.school/the-nest-school-campus/" target="_blank">The NEST School Campus</a></li>
+                  <a class="nav-link" data-bs-toggle="collapse" href="#aboutCollapse" role="button" aria-expanded="true" aria-controls="aboutCollapse">
+                    About <i class="bi bi-chevron-down dropdown-arrow"></i>
+                  </a>
+                      <div class="collapse" id="aboutCollapse">
+                        <ul class="submenu">
+                          <li><a href="https://thenest.school/about/#_our-story" target="_blank">Our Story</a></li>
+                          <li><a href="https://thenest.school/about/#vission-mission" target="_blank">Vision & Mission</a></li>
+                          <li><a href="https://thenest.school/about/#_our-culture" target="_blank">Our Values & Culture</a></li>
+                          <li><a href="https://thenest.school/about/#the-nest-pillars" target="_blank">The NEST School Pillars</a></li>
+                        </ul>
+                      </div>
+                    <li class="nav-item"><a class="nav-link text-dark" href="https://thenest.school/parents-testimonial/" target="_blank">Parent Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="https://thenest.school/school-news/" target="_blank">News and Events</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="https://thenest.school/nest-careers/" target="_blank">Careers</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="https://thenest.school/contact/" target="_blank">Contact Us</a></li>
+                    </ul>
+
+                    <div class="mt-4">
+                    <p class="fw-bold mb-2">Follow us</p>
+                    <div class="d-flex gap-2">
+                        <a href="https://www.facebook.com/TheNESTSchoolChennai/" target="_blank"><i class="bi bi-facebook fs-4 text-dark border border-dark p-1 rounded"></i></a>
+                        <a href="https://www.instagram.com/the_nest_school/" target="_blank"><i class="bi bi-instagram fs-4 text-dark border border-dark p-1 rounded"></i></a>
+                        <a href="https://www.youtube.com/@TheNESTSchoolChennai" target="_blank"><i class="bi bi-youtube fs-4 text-dark border border-dark p-1 rounded"></i></a>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+            </div>
+
+        </div>
+        </header>
+        <!--------------------next form section---------------->
+    <section class="py-5" style="background-color: #fff5f5;">
+  <div class="container text-center">
+    <h2 class="fw-bold" style="color: #0b2c67;">IB PYP and Cambridge Affiliated School in Chennai</h2>
+    <h4 class="fw-bold my-2" style="color: #f5a100;">Pre-KG to Grade 9 Admissions Open</h4>
+    <p class="mb-5">
+      With 75 Year Legacy in Education of Meenakshi College, Kodambakkam with 12:1 Student to Teacher Ratio,
+      State of the art 100k Sq.ft. Lush Green Campus making it one of The Best International Schools in Chennai
+    </p>
+
+    <h3 class="fw-bold mb-4">Enquire Now for Admissions</h3>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <form>
+          <div class="mb-3 text-start">
+            <label class="form-label fw-semibold">Name <span class="text-danger">*</span></label>
+            <input type="text" class="form-control" placeholder="Enter your full name" required>
+          </div>
+          <div class="mb-3 text-start">
+            <label class="form-label fw-semibold">Email Address <span class="text-danger">*</span></label>
+            <input type="email" class="form-control" placeholder="Enter your email address" required>
+          </div>
+          <div class="mb-3 text-start">
+            <label class="form-label fw-semibold">Phone Number <span class="text-danger">*</span></label>
+            <input type="tel" class="form-control" placeholder="Enter your phone number" required>
+          </div>
+          <div class="mb-3 text-start">
+            <label class="form-label fw-semibold">Grade Enquired For <span class="text-danger">*</span></label>
+            <select class="form-select" required>
+              <option selected disabled>Select Your Option</option>
+              <option>Pre-KG</option>
+              <option>LKG</option>
+              <option>UKG</option>
+              <option>Grade 1 to 9</option>
+            </select>
+          </div>
+          <div class="mb-4 text-start">
+            <label class="form-label fw-semibold">Where did you hear about us?</label>
+            <select class="form-select">
+              <option selected disabled>Select Your Option</option>
+              <option>Google Search</option>
+              <option>Facebook / Instagram</option>
+              <option>Friends / Family</option>
+              <option>Hoardings / Flyers</option>
+            </select>
+          </div>
+
+          <!-- Google reCAPTCHA Placeholder -->
+          <div class="mb-4 text-start">
+            <div class="g-recaptcha" data-sitekey="your_site_key_here"></div>
+          </div>
+
+          <button type="submit" class="btn btn-primary px-4">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 g-4 my-5">
+      <div class="col">
+        <div class="p-4 h-100 shadow-sm rounded bg-white text-start">
+          <h6 class="fw-bold mb-1" style="color: #0b2c67;">75-Year Legacy of Excellence</h6>
+          <p class="mb-0">A tradition of educational brilliance, preparing tomorrow’s leaders.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="p-4 h-100 shadow-sm rounded bg-white text-start">
+          <h6 class="fw-bold mb-1" style="color: #0b2c67;">Prime Location in Chennai</h6>
+          <p class="mb-0">Nestled in the heart of the city at Meenakshi College, Kodambakkam.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="p-4 h-100 shadow-sm rounded bg-white text-start">
+          <h6 class="fw-bold mb-1" style="color: #0b2c67;">Innovative and Diverse Curriculum</h6>
+          <p class="mb-0">Embracing <em>IB PYP</em> and <em>Cambridge</em> syllabi for a well-rounded education.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="p-4 h-100 shadow-sm rounded bg-white text-start">
+          <h6 class="fw-bold mb-1"style="color: #0b2c67;">State-of-the-Art Campus</h6>
+          <p class="mb-0">Equipped with modern facilities to foster learning and creativity.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="p-4 h-100 shadow-sm rounded bg-white text-start">
+          <h6 class="fw-bold mb-1" style="color: #0b2c67;">Focus on Individual Growth</h6>
+          <p class="mb-0">Each child’s unique talents are nurtured and celebrated.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="p-4 h-100 shadow-sm rounded bg-white text-start">
+          <h6 class="fw-bold mb-1" style="color: #0b2c67;">Balance of Academics and Extracurriculars</h6>
+          <p class="mb-0">Cultivating academic excellence and diverse interests.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-------------------next section ----------------->
+<section class="py-5 bg-white">
+  <div class="container">
+    <h3 class="text-center" style="color: #0b2c67;">Explore IB and IGCSE Curriculum at The Nest School</h3>
+    <p class="text-center py-3">The NEST School is an International School with a focus on holistic learning. We are one of the few IB schools offering
+         the IB PYP  programs in Chennai for grades Pre KG – Grade 5. We offer the renowned Cambridge Lower Secondary Program leading to the IGCSE certification for our Grades 6-10.</p>
+    <h3 class="text-center py-3" style="color: #f5a100;">Early Year Program  @ The NEST School</h3>
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+      <div class="col scroll-container">
+        <div class="text-center p-4 shadow-sm rounded h-100">
+          <img src="./playing.png" alt="Bilingual Program" class="mb-3" width="64">
+          <h6 class="fw-bold">Child-centred</h6>
+          <p>Our Early Year program is based on the belief that children learn best when they are allowed to explore and learn at their own pace. We have a carefully curated curriculum which involves the best practices 
+            across the Montessori, Waldorf and the Reggio Emilia methods of teaching-learning incorporated with the IB PYP Program.</p>
+        </div>
+      </div>
+      <div class="col scroll-container">
+        <div class="text-center p-4 shadow-sm rounded h-100">
+          <img src="./knowledge.png" alt="Happy Students" class="mb-3" width="64">
+          <h6 class="fw-bold">Inquiry based learning</h6>
+          <p>Our IB PYP curriculum is designed to help the child see the world through various themes and allows an inquiry based learning. These make them confident lifelong 
+            self learners that can cope up with challenges in the real world.</p>
+        </div>
+      </div>
+      <div class="col scroll-container">
+        <div class="text-center p-4 shadow-sm rounded h-100">
+          <img src="./machine-learning.png" alt="Modern Facilities" class="mb-3" width="64">
+          <h6 class="fw-bold">Hands-on learning</h6>
+          <p>Our classrooms are filled with hands-on materials adopted from the Montessori method that children can use to learn about the world around them. The 100 languages from the Reggio Emilia
+             approach are brought alive through the various models of learning adopted in the classroom. Our vivid classroom displays celebrate and nurture each child’s talent and capabilities. Role plays, visual art, movement and music are rolled into the lessons using the Waldorf method to make learning more fun and meaningful.  A key part of our curriculum focuses on teaching children basic life skills.</p>
+        </div>
+      </div>
+        <div class="col scroll-container">
+        <div class="text-center p-4 shadow-sm rounded h-100">
+          <img src="./requirements.png" alt="Modern Facilities" class="mb-3" width="64">
+          <h6 class="fw-bold">Emphasis on independence and life skills</h6>
+          <p>A perfect amalgamation of leading methods of learning in the early years including Montessori, Waldorf, Reggio Emilia blended with 
+            the IB PYP curriculum make our school one of the best IB schools in Chennai. Our program encourages children to be independent and to take responsibility for their own learning.</p>
+        </div>
+      </div>
+        </div>
+        <h3 class="text-center py-3" style="color: #f5a100;">IB PYP Curriculum</h3>
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+      <div class="col scroll-container">
+        <div class="text-center p-4 shadow-sm rounded h-100">
+          <img src="./accepted.png" alt="Parent Communication" class="mb-3" width="64">
+          <h6 class="fw-bold">Internationally recognized and accredited</h6>
+          <p>The IB Curriculum is recognized by universities around the world, and graduates of IB programs
+             are often well-prepared for success in higher education.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="text-center p-4 shadow-sm rounded h-100">
+          <img src="./challenges.png" alt="Scholarships" class="mb-3" width="64">
+          <h6 class="fw-bold">Rigorous and challenging</h6>
+          <p>The IB curriculum is designed to be academically challenging, and students who complete the program 
+            will have developed strong critical thinking, research, and writing skills.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="text-center p-4 shadow-sm rounded h-100">
+          <img src="./self-disciplined.png" alt="Passionate Teachers" class="mb-3" width="64">
+          <h6 class="fw-bold">Inquiry based transdisciplinary learning</h6>
+          <p>The IB PYP curriculum framework has been used to curate the unique Primary years curriculum at The NEST School where
+             learners learn through inquiry revolving around 6 themes. The IB curriculum emphasises transdisciplinary learning, which 
+             means that students will learn to connect ideas from different subjects.</p>
+        </div>
+      </div>
+        <div class="col">
+        <div class="text-center p-4 shadow-sm rounded h-100">
+          <img src="./holistic-approach.png" alt="Passionate Teachers" class="mb-3" width="64">
+          <h6 class="fw-bold">Holistic</h6>
+          <p>The IB program is not just about academics; it also focuses on developing students’ personal and social skills. Learners are exposed to a variety of subjects
+             including Art, Movement, Yoga, Dance  etc. to ensure a hierarchy free learning environment.</p>
+        </div>
+      </div>
+      </div>
+       <h3 class="text-center py-4 my-lg-3" style="color: #f5a100;">IGCSE Curriculum</h3>
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+      <div class="col scroll-container">
+        <div class="text-center p-4 shadow-sm rounded h-100">
+          <img src="./solution.png" alt="Parent Communication" class="mb-3" width="64">
+          <h6 class="fw-bold">Internationally recognized & Flexible and customizable</h6>
+          <p>The IGCSE exams are recognized by universities around the world, and students who
+             complete IGCSE courses are often well-prepared for higher education. Schools can choose which IGCSE courses to offer,
+              which means that students can tailor their education to their talents, interests and needs.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="text-center p-4 shadow-sm rounded h-100">
+          <img src="./books.png" alt="Scholarships" class="mb-3" width="64">
+          <h6 class="fw-bold">Broad range of subjects</h6>
+          <p>IGCSE courses are available in a wide range of subjects, from traditional academic subjects to more vocational subjects. In addition a variety of electives are offered to 
+            ensure that learners are able to acquire different skills to make them confident lifelong learners</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="text-center p-4 shadow-sm rounded h-100">
+          <img src="./online-learning.png" alt="Passionate Teachers" class="mb-3" width="64">
+          <h6 class="fw-bold">Hierarchy free learning</h6>
+          <p>At The NEST School we aim to expose learners to a wide range of co curricular activities including Visual and Performing Arts, 
+            Sports, Music, Yoga etc to ensure that there is a hierarchy free learning approach breaking the traditional settings with only focus on STEM subjects. This makes The NEST School a unique and one of the top rated Cambridge IGCSE schools in the city</p>
+        </div>
+      </div>
+        <div class="col">
+        <div class="text-center p-4 shadow-sm rounded h-100">
+          <img src="./abilities.png" alt="Passionate Teachers" class="mb-3" width="64">
+          <h6 class="fw-bold">Emphasis on practical skills</h6>
+          <p>IGCSE courses often emphasise practical skills, such as problem-solving and communication. Learners become confident about their
+             strengths to be able to solve challenging problems through innovative and creative approaches.</p>
+        </div>
+      </div>
+      </div>
+  </div>
+</section>
+<!-----------------programms section---------->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="fw-bold mb-4 text-center" style="color: #0b2c67;">Programmes Offered</h2>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
+
+      <div class="col mb-3">
+        <h5 class="fw-bold" style="color: #f5a100;">Nursery</h5>
+        <a href="https://thenest.school/programmes-nursery/" target="_blank" style="text-decoration: none; color: inherit;">
+          <div class="card border-0 shadow-sm h-100">
+            <img src="./hover1.jpg" class="card-img-top" alt="Nursery">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">
+                Pre-KG, LKG, UKG <span class="text-danger fw-bold fs-4">→</span>
+              </h5>
+              <p class="card-text">
+                Bringing the best of Reggio Emilia, Montessori, Waldorf methods, and IB PYP curricula to help young learners engage in play and inquiry-based learning
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col mb-3">
+        <h5 class="fw-bold" style="color: #f5a100;">Primary</h5>
+        <a href="https://thenest.school/programmes-primary/" target="_blank" style="text-decoration: none; color: inherit;">
+          <div class="card border-0 shadow-sm h-100">
+            <img src="./gover3.jpg" class="card-img-top" alt="Primary">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">
+                Grade 1 - 5 <span class="text-danger fw-bold fs-4">→</span>
+              </h5>
+              <p class="card-text">
+                Bridging budding learners of The NEST School to 21st century skills through a curriculum that is authentic, relevant and inquiry-based
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col mb-3">
+        <h5 class="fw-bold" style="color: #f5a100;">Lower Secondary</h5>
+        <a href="https://thenest.school/programmes-lower-secondary/" target="_blank" style="text-decoration: none; color: inherit;">
+          <div class="card border-0 shadow-sm h-100">
+            <img src="./hover2.jpg" class="card-img-top" alt="Lower Secondary">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">
+                Grade 6 - 8 <span class="text-danger fw-bold fs-4">→</span>
+              </h5>
+              <p class="card-text">
+                Empowering developing learners to prepare for life with informed curiosity, your child discovers a challenging, culturally-sensitive yet international curricula
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      
+      <div class="col mb-3">
+        <h5 class="fw-bold" style="color: #f5a100;">Grade 9 & 10</h5>
+        <a href="https://thenest.school/programmes-grade9-10/" target="_blank" style="text-decoration: none; color: inherit;">
+          <div class="card border-0 shadow-sm h-100">
+            <img src="./grade9to10.jpg" class="card-img-top" alt="Grade 9 & 10">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">
+                Grade 9 - 10 <span class="text-danger fw-bold fs-4">→</span>
+              </h5>
+              <p class="card-text">
+                Empowering developing learners to prepare for life with informed curiosity, your child discovers a challenging, culturally-sensitive yet international curricula
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!---------------Footer----------->
+<footer class="bg-info-subtle text-dark pt-5">
+  <div class="container">
+    <div class="row">
+
+      <!-- Logo and Description -->
+      <div class="col-md-4 mb-4">
+        <img src="./nestschoollogo.png" alt="The Nest School Logo" width="150" class="mb-3">
+        <p>The Nest School is the Best IB School in Chennai with 75 year Legacy in Education in Kodambakkam. IB PYP & CAIE Curriculum we offer nurtures the young minds & this Holistic Education makes us the Best International School in Chennai.</p>
+        <div class="d-flex gap-3">
+          <a href="https://www.facebook.com/TheNESTSchoolChennai/" target="_blank" class="text-decoration-none text-white bg-danger p-2 rounded-circle"><i class="bi bi-facebook"></i></a>
+          <a href="https://twitter.com/The_NEST_School" target="_blank" class="text-decoration-none text-white bg-warning p-2 rounded-circle"><i class="bi bi-twitter"></i></a>
+          <a href="https://www.instagram.com/the_nest_school/" target="_blank" class="text-decoration-none text-white bg-danger p-2 rounded-circle"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.youtube.com/@TheNESTSchoolChennai" target="_blank" class="text-decoration-none text-white bg-danger p-2 rounded-circle"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- Links -->
+      <div class="col-md-3 mb-4">
+        <ul class="list-unstyled">
+          <a href="https://thenest.school/programmes-nursery/" target="_blank" style="text-decoration: none; color: inherit;">
+              <li class="mb-2 fw-semibold">Programmes</li>
+            </a>
+          <a href="https://thenest.school/admission/" target="_blank" class="mb-2 fw-semibold d-block text-decoration-none text-dark">
+            Admission
+          </a>
+          <a href="https://thenest.school/about/" target="_blank" class="mb-2 fw-semibold d-block text-decoration-none text-dark">
+            About
+          </a>
+          <a href="https://thenest.school/nest-events/" target="_blank" class="mb-2 fw-semibold d-block text-decoration-none text-dark">
+            News and Events
+          </a>
+          <a href="https://thenest.school/careers/" target="_blank" class="mb-2 fw-semibold d-block text-decoration-none text-dark">
+            Careers
+          </a>
+          <a href="https://thenest.school/contact/" target="_blank" class="mb-2 fw-semibold d-block text-decoration-none text-dark">
+            Contact
+          </a>
+        </ul>
+      </div>
+
+      <!-- Map and Address -->
+      <div class="col-md-5 mb-4">
+        <h5 class="fw-bold">Visit The Best International School In Chennai Today</h5>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.066092160507!2d80.21996927479357!3d13.049802387275105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5266b239f24371%3A0x49f9fd20295b4b2e!2sThe%20NEST%20School!5e0!3m2!1sen!2sin!4v1708423344062!5m2!1sen!2sin" width="100%" height="180" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <p class="mt-3 mb-1 text-primary fw-bold">The NEST School</p>
+        <p>363, Arcot Road (NSK Salai), Kodambakkam, Chennai, Tamil Nadu 600 024</p>
+        <p class="mb-1 text-primary fw-bold">For Admission Enquiries:</p>
+        <p>994-010-6378</p>
+        <p class="mb-1 text-primary fw-bold">For Other Enquiries:</p>
+        <p>994-010-6358</p>
+      </div>
+
+    </div>
+    <hr>
+    <div class="text-center pb-3">
+      <small>&copy; 2023 The NEST School. All rights reserved | <a href="#" class="text-dark">Fee Payment</a> - <a href="#" class="text-dark">T & C</a></small>
+    </div>
+  </div>
+</footer>
+<!-- Load reCAPTCHA Script -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
